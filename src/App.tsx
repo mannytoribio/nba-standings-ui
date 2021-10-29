@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { getAllTeams, Team } from './service/team.service';
+import BasicTabs from './components/Navbar'
+import FormPropsTextFields from './components/CreateTeamForm';
 import './App.css';
 
 
 export const App = () => {
-  const [teams, setTeams] = useState<Team[]>([])
 
-  useEffect(() => {
-    getAllTeams().then((ret) => setTeams(ret))
-  }, [])
-
-  return <></>
+  return (
+    <>
+      <BasicTabs />
+    </>
+  )
 }
 

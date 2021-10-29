@@ -4,7 +4,6 @@ export interface Team {
     _id?: string,
     name: string,
     city: string,
-    logo: string
 }
 
 export const getAllTeams = async () => {
